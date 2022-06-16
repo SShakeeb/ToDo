@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require("fs"); // require file system object
 function jsonWriter(filePath,obj){
     fs.writeFile(filePath, JSON.stringify(obj, null, 2), err =>{
         if (err) {
