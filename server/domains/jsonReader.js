@@ -1,4 +1,4 @@
-const fs = require("fs"); // require file system object
+const fs = require("fs");
 
 function jsonReader(filePath, cb) {
     fs.readFile(filePath, (err, fileData) => {
