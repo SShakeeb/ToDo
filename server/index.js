@@ -1,11 +1,12 @@
 const express = require("express"); // require express framework
 const bodyParser = require('body-parser'); // body parser for patch req
+const cors = require('cors'); //Cross-Origin Resource Sharing
 const PORT = process.env.PORT || 3001;
 const todoRoutes = require("./routes/todoRoutes");
 const app = express();
 
 app.use(bodyParser.json())
-
+app.use(cors())
 app.use("/api/todoRoutes", todoRoutes)
 
 app.get("/", (req, res) => {
