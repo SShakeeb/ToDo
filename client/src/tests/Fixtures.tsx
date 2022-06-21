@@ -25,8 +25,28 @@ export const TodoList = [
     { id: 9, name: 'nine', description: 'nine text', status: 'done' },
     { id: 10, name: 'ten', description: 'ten text', status: 'pending' }
   ];
+export const toUpdate = {
+  id: 1,
+  name: 'first',
+  description: 'first text',
+  status: 'done'
+};
+
+export const updatedTodo = {
+  id: 1,
+  name: 'first',
+  description: 'first text',
+  status: 'done'
+};
+
 export function getTestTodo(){
     return (
         TodoList
     )
+}
+
+export function updateTestTodo(){
+  return (
+    updatedTodo
+  )
 }
